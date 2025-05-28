@@ -1,0 +1,479 @@
+/* font comment: 
+font-family: 'Poppins', sans-serif;
+*/
+
+
+
+
+/*Header start*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+body {
+    min-height: 100vh;
+    background: url(MainBackground.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #211a1d ;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 25px;
+    color: #211a1d;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #211a1d;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+/*Header end*/
+
+
+/*Footer start*/
+.footer {
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.copyright{
+    font-weight: 600;
+    font-size: 28px;
+    color: #cad5ca;
+    text-decoration: none;
+}
+
+.copyright::before{
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #cad5ca;
+    transition: .3s;
+}
+
+.copyright:hover::before{
+    width: 100%;
+}
+.footbar a{
+    position: relative;
+    font-size: 25px;
+    color: #cad5ca;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.footbar a::before{
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #cad5ca;
+    transition: .3s;
+}
+
+.footbar a:hover::before{
+    width: 100%;
+}
+
+/*Footer end*/
+
+
+/*ALL PAGES STYLING*/
+.main{
+    height: 1100px;
+    width: 100%;
+    padding-top: 180px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+
+
+/*Home page*/
+
+.contetn1{ /*this one is for page HOME*/
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 800px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.box-left-top{
+width: 60%;
+height: 60%;
+font-weight: 300;
+border-radius: 20px;
+float: left;
+font-size: 25px;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.box-right-top{
+    width: 40%;
+    height: 60%;
+    background: url(wp11723963-4k-mountain-bike-wallpapers.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    float: right;
+}
+/*Home page end*/
+
+
+/*MTB page*/
+.contetn2{ /*this one is for page MTB*/
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 800px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.big-hor-left{
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+    background: transparent;
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+    align-items: center;
+}
+
+.big-hor-left-top {
+    width: 100%;
+    height: 30%;
+    border-radius: 20px;
+    background: url(moutainbikmtbpipcright.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.big-hor-left-bottom {
+    width: 100%;
+    height: fit-content;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.438);
+    font-weight: 300;
+    font-size: 20px;
+}
+.big-hor-right{
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+    background: transparent;
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.big-hor-right-top{
+     width: 100%;
+    height: 30%;
+    border-radius: 20px;
+    background: url(mtb-top-kit-for-riders.avif);
+    background-position: center;
+    background-size: cover;
+}
+.big-hor-right-bottom{
+    width: 100%;
+    height: fit-content;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.438);
+    font-weight: 300;
+    font-size: 20px;
+}
+
+/* end of MTB page*/
+
+/*start of ROAD page*/
+.contetn3{ /*this one is for page road*/
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 800px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.big-hor-pic{
+    width: 100%;
+    height: 35%;
+    border-radius: 20px;
+    background: url(mainroad.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.big-hor-text {
+    width: 100%;
+    height: 30%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.438);
+    font-weight: 300;
+    font-size: 25px;
+}
+.dos-pic-holder{
+    height: 35%;
+    width: 100%;
+    border-radius: 20px;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.pic-right{
+    height: 100%;
+    width: 45%;
+    border-radius: 20px;
+    background: url(gearrr.webp);
+    background-position: center;
+    background-size: cover;
+}
+.pic-left{
+    height: 100%;
+    width: 45%;
+    border-radius: 20px;
+    background: url(roadlast.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/*End of the road*/
+
+/*Start of Tips part*/
+.contetn4{ /*this one is for page MTB*/
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 800px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top_part{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.Box_1{
+    width: 20%;
+    height: 100%;
+    border-radius: 20px;
+    background: rgba(100, 200, 180, 0.4);
+    display: flex;
+    flex-direction: column;
+}
+.Box_1_TOP{
+    width: 100%;
+    height: 40%;
+    border-radius: 20px;
+    background: url(helmet.avif);
+    background-size: cover;
+    background-position: center 13%;
+}
+.Box_1_BOTTOM{
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: transparent;
+
+}
+.Box_2{
+    width: 20%;
+    height: 100%;
+    border-radius: 20px;
+    background: rgba(100, 200, 180, 0.4);
+    display: flex;
+    flex-direction: column;
+}
+.Box_2_TOP{
+    width: 100%;
+    height: 40%;
+    border-radius: 20px;
+    background: url(bikeclean.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.Box_2_BOTTOM{
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: transparent;
+
+}
+
+.Box_3{
+    width: 20%;
+    height: 100%;
+    border-radius: 20px;
+    background: rgba(100, 200, 180, 0.4);
+    display: flex;
+    flex-direction: column;
+}
+.Box_3_TOP{
+    width: 100%;
+    height: 40%;
+    border-radius: 20px;
+    background: url(drinkwatah.webp);
+    background-size: cover;
+    background-position: center;
+}
+.Box_3_BOTTOM{
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: transparent;
+
+}
+.bottom_part {
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.Box_11{
+    width: 20%;
+    height: 100%;
+    border-radius: 20px;
+    background: rgba(100, 200, 180, 0.4);
+    display: flex;
+    flex-direction: column;
+}
+.Box_11_TOP{
+    width: 100%;
+    height: 40%;
+    border-radius: 20px;
+    background: url(roadcignal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Box_11_BOTTOM{
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: transparent;
+
+}
+.Box_21{
+    width: 20%;
+    height: 100%;
+    border-radius: 20px;
+    background: rgba(100, 200, 180, 0.4);
+    display: flex;
+    flex-direction: column;
+}
+.Box_21_TOP{
+    width: 100%;
+    height: 40%;
+    border-radius: 20px;
+    background: url(cloTHONG.webp);
+    background-size: cover;
+    background-position: center 30%;
+}
+.Box_21_BOTTOM{
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: transparent;
+
+}
+.Box_31{
+    width: 20%;
+    height: 100%;
+    border-radius: 20px;
+    background: rgba(100, 200, 180, 0.4);
+    display: flex;
+    flex-direction: column;
+}
+.Box_31_TOP{
+    width: 100%;
+    height: 40%;
+    border-radius: 20px;
+    background: url(begginah.webp);
+    background-size: cover;
+    background-position: center;
+}
+.Box_31_BOTTOM{
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: transparent;
+
+}
+.title-box{
+    color: black;
+    font-size: 25px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+.intel-box{
+    color: #333333;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-top: 20px;
+    padding-right: 5px;
+}
